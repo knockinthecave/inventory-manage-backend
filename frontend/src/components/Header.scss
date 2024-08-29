@@ -1,0 +1,43 @@
+// 색상 변수 설정
+$primary-color: rgb(0, 115, 233);
+$default-color: black;
+$hover-background: transparent;
+
+// 기본 버튼 스타일 (선택되지 않은 상태)
+.header-button {
+  background-color: transparent; // 배경 투명
+  color: $default-color; // 텍스트 검정색
+  flex-shrink: 0;
+  border: none;
+  padding: 8px 16px;
+  font-size: 16px;
+  border-radius: 4px; // 버튼에 약간의 둥근 테두리 추가
+  transition: color 0.3s ease, border-bottom 0.3s ease;
+
+  // 선택된 버튼 스타일
+  &.selected {
+    color: $primary-color; // 선택된 버튼의 텍스트 색상 파란색으로 변경
+    border-bottom: 3px solid $primary-color; // 선택된 버튼에 파란색 밑줄 추가
+    background-color: transparent; // 배경 투명 유지
+  }
+
+  // 선택되지 않은 버튼 hover, focus, active 상태
+  &:hover,
+  &:focus,
+  &:active {
+    background-color: $hover-background; // hover, focus, active 상태에서 투명한 배경
+    color: $default-color; // 텍스트 검정색 유지
+  }
+}
+
+.header-container {
+  display: flex;
+  overflow-x: auto; // 가로 스크롤 가능하게 설정
+  white-space: nowrap; // 텍스트 줄 바꿈 방지
+  width: 100%; // 버튼 그룹이 전체 너비를 차지하도록 설정
+  scrollbar-width: none; // 기본 스크롤바 숨김 (Firefox)
+
+  &::-webkit-scrollbar {
+    display: none; // 기본 스크롤바 숨김 (Chrome, Safari)
+  }
+}

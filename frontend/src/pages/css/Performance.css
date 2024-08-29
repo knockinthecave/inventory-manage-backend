@@ -1,0 +1,8 @@
+.chart-container {
+  width: 100%; /* 너비를 100%로 설정 */
+  height: calc(100vh - 150px); /* 차트가 상단과 하단의 고정된 UI 요소를 제외한 전체 높이를 차지하도록 설정 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 16px; /* 내부 패딩 */
+}

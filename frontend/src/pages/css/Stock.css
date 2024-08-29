@@ -1,0 +1,28 @@
+.table-cell {
+  white-space: normal; /* 텍스트 줄 바꿈 허용 */
+  word-break: break-word; /* 단어가 셀을 넘지 않도록 설정 */
+}
+
+.table-container {
+  display: flex;
+  flex-direction: column;
+  height: 80vh;
+}
+
+.table-wrapper {
+  flex: 1;
+  overflow: auto;
+}
+
+.table-header, .table-cell, .table-row {
+  padding: 8px;
+  text-align: left;
+}
+
+.table-header {
+  background-color: #f0f0f0;
+}
+
+.table-row:nth-child(even) {
+  background-color: #f9f9f9;
+}

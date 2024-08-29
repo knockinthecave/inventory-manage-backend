@@ -1,0 +1,13 @@
+.table-cell {
+  white-space: normal; /* 텍스트 줄 바꿈 허용 */
+  word-break: break-word; /* 단어가 셀을 넘지 않도록 설정 */
+}
+
+.table-header {
+  text-align: left;
+  padding: 8px;
+}
+
+.table-row {
+  padding: 8px;
+}
