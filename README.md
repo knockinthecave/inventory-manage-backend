@@ -109,6 +109,3 @@ python manage.py runserver
 
 ---
 
-## 문의
-문의 사항이 있으시면 [knockinthecave@gmail.com](mailto:knockinthecave@gmail.com)으로 연락주시기 바랍니다.
-
